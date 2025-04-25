@@ -6,7 +6,7 @@ const articlesPath = path.join('articles');
 export const getHome = async (req, res) => {
     const files = await fs.readdir(articlesPath);
     const articles = await Promise.all(
-        files.map(async file => JSON.parse(await fs.readFile(path.json(articlesPath, file))))
+        files.map(async file => JSON.parse(await fs.readFile(path.join(articlesPath, file))))
     );
     articles.sort((a, b) => new Date(b.date) - new Date(a.date));
     res.render('home', { articles })
