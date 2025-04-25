@@ -1,0 +1,144 @@
+/* ============ ESTILOS GENERALES ============ */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-left: 4px solid #1a73e8;
+  border-radius: 5px;
+}
+
+small {
+  color: #666;
+}
+
+/* ============ HOME (home.ejs) ============ */
+ul li a {
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* ============ ARTICLE (article.ejs) ============ */
+p {
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* ============ ADMIN DASHBOARD (admin.ejs) ============ */
+.admin-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eef3f7;
+  border-left: 5px solid #5c6bc0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.admin-list form {
+  display: inline;
+  margin-left: 10px;
+}
+
+.admin-actions a,
+.admin-actions button {
+  margin-left: 10px;
+  font-size: 0.9rem;
+}
+
+button {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c62828;
+}
+
+/* ============ FORMULARIOS (new.ejs y edit.ejs) ============ */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  margin-top: 15px;
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0f5ed7;
+}
+
+/* ============ LOGIN (login.ejs) ============ */
+.login-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
